@@ -80,23 +80,25 @@ export default function Home() {
           height={550}
           priority
         />
-        {/* <span className="relative flex h-10 w-10 mt-20">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-10 w-10 bg-white"></span>
-        </span>  */}
-        <div className="flex flex-col items-center justify-center mt-20 text-white">
+        <div className="flex flex-col items-center justify-center mt-10 text-white">
           {days === 0 && hours === 0 && minutes === 0 && seconds === 0 && milliseconds === 0 ? (
-            <h1 className="text-4xl font-extrabold text-red-600">BALD IST MEINE SEITE JA DA!!!</h1>
+              <Image
+                src="/image.png"
+                alt="Next.js Logo"
+                width={200}
+                height={200}
+                priority
+              />
           ) : (
             <div className="flex space-x-4">
-              <div className="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg">
+              {/* <div className="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg">
                 <h1 className="text-5xl font-bold">{days}</h1>
                 <p className="text-lg">Days</p>
               </div>
               <div className="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg">
                 <h1 className="text-5xl font-bold">{hours}</h1>
                 <p className="text-lg">Hours</p>
-              </div>
+              </div> */}
               <div className="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-lg">
                 <h1 className="text-5xl font-bold">{minutes}</h1>
                 <p className="text-lg">Minutes</p>
