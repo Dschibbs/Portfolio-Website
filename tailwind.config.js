@@ -16,6 +16,6 @@ module.exports = {
     fontFamily: {
       rubik: ['Rubik', 'sans-serif'],
     },
-  },
+  }
 }
 
