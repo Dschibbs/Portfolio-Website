@@ -1,7 +1,7 @@
 {
-  "name": "react-next-storyblok-boilerplate",
+  "name": "max-portfolio",
   "version": "1.0.0",
-  "description": "Next.js Storyblok Boilerplate",
+  "description": "A website for max",
   "main": "index.js",
   "private": true,
   "scripts": {
