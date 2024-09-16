@@ -1,38 +1,58 @@
-# Max Portfolio Webseite
+# Next.js Storyblok Boilerplate
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repository is a Next.js [Storyblok](https://www.storyblok.com) starter template used in following [5 minute tutorial](https://www.storyblok.com/tp/add-a-headless-cms-to-next-js-in-5-minutes).
 
-## Getting Started
+## Requirements
 
-First, run the development server:
+To use this project you have to have a Storyblok account. If you don't have one yet you can register at [Storyblok](https://www.storyblok.com), it's free.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## How to get started?
+
+Read the [Next.js tutorial](https://www.storyblok.com/tp/add-a-headless-cms-to-next-js-in-5-minutes) about connecting Storyblok and Next.js
+
+### 1. Clone the repo
+
+```sh
+  $ git clone https://github.com/storyblok/react-next-boilerplate.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install all dependecies 
+```sh
+$  yarn # or npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Adding the Access token
+Create a new empty Space and exchange the preview token with your own in ```pages/_app.js```.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```js
+// in pages/_app.js
+storyblokInit({
+  accessToken: "your-preview-token",
+  use: [apiPlugin],
+  components,
+});
+```
 
-## Learn More
+### 4. Run your project
+Set the preview domain in <strong>Storyblok</strong> to `http://localhost:3000/`
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+# to run in developer mode
+$ yarn dev # or npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+# to build your project
+$ yarn build # or npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Resources
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js docs](https://nextjs.org/docs/#setup)
+- [Storyblok Tutorial](https://www.storyblok.com/tp/add-a-headless-cms-to-next-js-in-5-minutes)
+- [Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode)
+
+
+  
