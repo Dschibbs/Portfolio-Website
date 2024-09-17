@@ -7,8 +7,10 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
  
-export default function Page({ story }) {
+export default function Page({ story, paths }) {
   story = useStoryblokState(story);
+
+  console.log(paths)
  
   return (
     <div>

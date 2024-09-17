@@ -1,9 +1,8 @@
 import { storyblokEditable } from "@storyblok/react";
 import Button from "./Button";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Stage = ({ blok }) => {
-  console.log(blok)
   return (
     <div className="flex gap-10 items-center">
       <div className="w-[35%] flex flex-col gap-10">

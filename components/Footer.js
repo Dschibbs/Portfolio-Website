@@ -1,7 +1,8 @@
 const Footer = () => {
   return (
-    <footer>
-      Footer
+    <footer className="flex flex-col">
+      <div>main</div>
+      <div>sec main</div>
     </footer>
   );
 };

@@ -8,7 +8,8 @@ import {
 } from "@storyblok/react";
  
 export default function Layout({ story, children }) {
-  story = useStoryblokState(story);
+  // console.log(story)
+  // story = useStoryblokState(story);
 
   return (
     <>

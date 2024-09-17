@@ -11,6 +11,10 @@
     @apply text-4xl font-bold;
   }
 
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
   p {
     @apply text-xl font-normal;
   }

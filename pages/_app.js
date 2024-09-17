@@ -5,13 +5,19 @@ import Grid from "../components/Grid";
 import Page from "../components/Page";
 import Teaser from "../components/Teaser";
 import Stage from "../components/Stage";
+import Headline from "../components/Headline";
+import CategorieTeaser from "../components/CategorieTeaser";
+import ImageGallery from "../components/ImageGallery";
 
 const components = {
   feature: Feature,
-  grid: Grid,
+  threeGrid: Grid,
   teaser: Teaser,
   page: Page,
   homeStage: Stage,
+  trennerHeadline: Headline,
+  categorieTeaser: CategorieTeaser,
+  imageGallery: ImageGallery,
 };
 
 storyblokInit({
