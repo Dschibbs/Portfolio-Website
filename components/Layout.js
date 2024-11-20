@@ -12,7 +12,7 @@ export default function Layout({ story, children }) {
   // story = useStoryblokState(story);
 
   return (
-    <>
+    <div className="w-full">
       <Navbar />
 
       <main>
@@ -20,7 +20,7 @@ export default function Layout({ story, children }) {
       </main>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -12,6 +12,7 @@ module.exports = {
     colors: {
       'bg': '#F5F0E7',
       'text': '#141414',
+      'textHover': '#2c2c2c',
     },
     fontFamily: {
       rubik: ['Rubik', 'sans-serif'],

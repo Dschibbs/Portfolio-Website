@@ -27,7 +27,8 @@ storyblokInit({
 });
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  const { key, ...rest } = pageProps;
+  return <Component key={key} {...rest} />;
 }
 
 export default MyApp;

@@ -19,7 +19,6 @@ export default function Home({ story }) {
       <Layout>
           <StoryblokComponent blok={story.content} />
       </Layout>
-      {/* <ImageGallery /> */}
     </div>
   );
 }
