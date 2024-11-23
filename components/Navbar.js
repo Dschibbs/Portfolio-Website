@@ -26,7 +26,7 @@ const Navbar = () => {
       {/* Regular Navigation for larger screens */}
       <ul className="hidden md:flex gap-10 font-medium text-xl uppercase">
         <li className="cursor-pointer hover:underline hover:underline-offset-4 transition-all">
-          <Link href="/projekte">Galerie</Link>
+          <Link href="/galerie">Galerie</Link>
         </li>
         <li className="cursor-pointer hover:underline hover:underline-offset-4 transition-all">
           <Link href="/ueber-mich">Über Mich</Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
       {menuOpen && (
         <ul className="absolute top-16 right-0 bg-white shadow-md w-full md:hidden flex flex-col items-center space-y-5 py-5 font-medium text-lg bg-bg">
           <li className="cursor-pointer">
-            <Link href="/projekte" onClick={() => setMenuOpen(false)}>
+            <Link href="/galerie" onClick={() => setMenuOpen(false)}>
               Galerie
             </Link>
           </li>

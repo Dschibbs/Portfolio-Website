@@ -7,8 +7,10 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
 
-export default function Home({ story }) {
+export default function Home({ story, footer }) {
   story = useStoryblokState(story);
+
+  console.log("footer", footer);
 
   return (
     <div>
@@ -16,7 +18,7 @@ export default function Home({ story }) {
         <title>{story ? story.name : "My Site"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
+      <Layout footerData={footer}>
           <StoryblokComponent blok={story.content} />
       </Layout>
     </div>
@@ -31,18 +33,15 @@ export async function getStaticProps() {
   };
 
   const storyblokApi = getStoryblokApi();
-  console.log(storyblokApi);
   let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams);
 
-  let { links } = await storyblokApi.get("cdn/links/" ,{
-    version: 'draft'
-  });
+  const footerData = await storyblokApi.get('cdn/stories/global/footer');
 
   return {
     props: {
       story: data ? data.story : false,
       key: data ? data.story.id : false,
-      links: links ? links : false,
+      footer: footerData ? footerData.data.story.content : false,
     },
     revalidate: 3600,
   };

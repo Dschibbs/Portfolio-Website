@@ -13,8 +13,6 @@ const ImageGallery = ({ blok }) => {
     setClickedImg(item.src.filename);
   };
 
-  console.log(blok)
-
   return (
     <>
       <Masonry>
@@ -28,7 +26,6 @@ const ImageGallery = ({ blok }) => {
               width: image.src.filename.split('/')[5].split('x')[0],
               height: image.src.filename.split('/')[5].split('x')[1]
             }
-            console.log("dimensions: ", dimensions.width, dimensions.height)
             return (
               <div className="w-full h-fit md:w-1/2 lg:w-1/3" key={index}>
                 <Image 

@@ -2,7 +2,6 @@ import { storyblokEditable } from "@storyblok/react";
 import Image from "next/legacy/image";
 
 const CategorieTeaser = ({ blok }) => {
-  console.log(blok)
   return (
     <a className="relative group" href={blok.link.cached_url}>
       <Image className="group-hover:scale-105 transition-all" src={blok.bild.filename} width={576} height={323} priority objectFit="cover" sizes="100vw"/>
